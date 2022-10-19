@@ -36,6 +36,16 @@ public class LinkedList {
         size++;
     }
 
+    public int deleteFirst() {
+        int value = head.value;
+        head = head.next;
+        if(head == null) {
+            tail = null;
+        }
+        size --;
+        return value;
+    }
+
     public void display() {
         Node temp = head;
         while (temp != null) {

@@ -6,6 +6,8 @@ public class LlMain {
         list.insertFirst(56);
         list.insert(30,1);
         list.display();
+        System.out.println("Deleting --> " +list.deleteFirst());
+        list.display();
 
     }
 }
